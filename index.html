@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>Form a Story</title>
@@ -15,31 +16,31 @@
     <h1>Complete the Form -<br> Complete the Story!</h1>
     <hr>
     <form action="story.html" method="GET">
-        <label for="animal-1">Animal: </label>
-        <input id="animal-1" type="text" name="animal-1" required>
+        <label for="Protagonist">Protagonist:</label>
+        <input id="Protagonist" type="text" name="Protagonist" required>
         <br>
-        <label for="animal-2">Another Animal: </label>
-        <input id="animal-2" name="animal-2" type="text" required>
+        <label for="Antagonist">Antagonist:</label>
+        <input id="Antagonist" name="Antagonist" type="text" required>
         <br>
-        <label for="animal-3">One More Animal: </label>
-        <input id="animal-3" name="animal-3" type="text" required>
+        <label for="SideCharacter">Side character:</label>
+        <input id="SideCharacter" name="SideCharacter" type="text" required>
         <br>
-        <label for="adj-1">Adjective (ends in -ed): </label>
+        <label for="adj-1">Adjective (ends in -ed):</label>
         <input id="adj-1" name="adj-1" type="text" required>
         <br>
-        <label for="adj-2">Adjective (ends in -ing): </label>
+        <label for="adj-2">Adjective (ends in -ing):</label>
         <input id="adj-2" name="adj-2" type="text" required>
         <br>
-        <label for="num-1">Number: </label>
+        <label for="num-1">Number:</label>
         <input id="num-1" name="num-1" type="number" required>
         <br>
-        <span>Yes or No: </span>
-        <input id="yes" type="radio" name="answer" value="yes" required>
-        <label for="yes"> Yes</label>
-        <input id="no" type="radio" name="answer" value="no" required>
-        <label for="no"> No</label>
+        <div class="radio-group">
+            <label>Yes or No:</label>
+            <label><input type="radio" name="yesno" value="yes"> Yes</label>
+            <label><input type="radio" name="yesno" value="no"> No</label>
+        </div>
         <br>
-        <label for="speed">Relative speed (ends in -er)</label>
+        <label for="speed">Relative speed:</label>
         <select id="speed" name="speed" required>
             <option value="slow">Slow</option>
             <option value="medium">Medium</option>
@@ -48,7 +49,7 @@
             <option value="even-faster">Even Faster</option>
         </select>
         <br>
-        <label for="quote">Motivational Quote: </label>
+        <label for="quote">Motivational Quote:</label>
         <input id="quote" name="quote" type="text" required list="quote-choices">
         <datalist id="quote-choices">
             <option value="winner gets ice cream!"></option>
@@ -58,12 +59,10 @@
             <option value="loser gets nothing!"></option>
         </datalist>
         <br>
-        <label for="message">Meaningful Message: </label>
-        <textarea id="message" name="message" required rows="8" cols="40">
-          </textarea>
+        <label for="message">Meaningful Message:</label>
+        <textarea id="message" name="message" required rows="8" cols="40"></textarea>
         <br>
         <input type="submit" value="Form My Story!">
-    </form>
-</section>
+    </form></section>
 </body>
 </html>
